@@ -10,7 +10,6 @@ resource "aws_lambda_function" "s3_to_blob" {
 
   timeout              = var.lambda_timeout
   memory_size          = var.lambda_memory_mb
-  reserved_concurrent_executions = var.lambda_reserved_concurrency
 
   environment {
     variables = {
