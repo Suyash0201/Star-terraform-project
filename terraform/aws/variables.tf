@@ -35,3 +35,24 @@ variable "schedule_expression" {
   type        = string
   default     = "rate(4 hours)"
 }
+variable "lambda_timeout" {
+  description = "Lambda timeout in seconds"
+  type        = number
+  default     = 900
+}
+
+variable "lambda_memory_mb" {
+  description = "Lambda memory in MB"
+  type        = number
+  default     = 1024
+}
+
+variable "azure_storage_account_name" {
+  description = "Azure storage account name"
+  type        = string
+}
+
+variable "azure_container_name" {
+  description = "Azure blob container name"
+  type        = string
+}
