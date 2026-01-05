@@ -13,7 +13,7 @@ variable "aws_region" {
 variable "source_s3_bucket" {
   description = "Existing S3 bucket name to read from"
   type        = string
-  default     = strak-digital
+  default     = "strak-digital"
 }
 
 variable "source_s3_prefix" {
@@ -25,13 +25,13 @@ variable "source_s3_prefix" {
 variable "azure_subscription_id" {
   description = "Azure subscription ID"
   type        = string
-  default     = f13b5de4-31e8-43a5-97dc-eaa6f3bcea5a  
+  default     = "f13b5de4-31e8-43a5-97dc-eaa6f3bcea5a"  
 }
 
 variable "azure_tenant_id" {
   description = "Azure tenant ID"
   type        = string
-  default     = 607db047-c4c6-48d4-99f7-ad24209e3c98
+  default     = "607db047-c4c6-48d4-99f7-ad24209e3c98"
 }
 
 variable "azure_location" {
