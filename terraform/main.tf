@@ -19,6 +19,7 @@ module "aws" {
   schedule_expression        = var.schedule_expression
   lambda_timeout             = var.lambda_timeout
   lambda_memory_mb           = var.lambda_memory_mb
+  reserved_concurrent_executions = 1
   azure_storage_account_name = var.azure_storage_account_name
   azure_container_name       = var.azure_container_name
 }
