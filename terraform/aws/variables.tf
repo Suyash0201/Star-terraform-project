@@ -57,3 +57,9 @@ variable "azure_container_name" {
   description = "Azure blob container name"
   type        = string
 }
+
+variable "lambda_reserved_concurrency" {
+  description = "Reserved concurrency limit for the Lambda function"
+  type        = number
+  default     = 2
+}
