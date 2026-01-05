@@ -61,5 +61,6 @@ variable "azure_container_name" {
 variable "lambda_reserved_concurrency" {
   description = "Reserved concurrency limit for the Lambda function"
   type        = number
-  default     = 2
+  default     = 1
 }
+
