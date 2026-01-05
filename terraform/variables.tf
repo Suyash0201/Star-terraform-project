@@ -93,3 +93,9 @@ variable "kms_key_arn" {
   type        = string
   default     = null
 }
+
+variable "lambda_reserved_concurrency" {
+  description = "Reserved concurrency limit for the Lambda function"
+  type        = number
+  default     = 2
+}
