@@ -17,6 +17,8 @@ module "aws" {
   azure_secret_name   = var.azure_secret_name
   kms_key_arn         = var.kms_key_arn
   schedule_expression = var.schedule_expression
+  azure_storage_account_name = var.azure_storage_account_name
+   azure_container_name       = var.azure_container_name
 }
 
 

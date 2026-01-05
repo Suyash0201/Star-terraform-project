@@ -50,6 +50,7 @@ variable "lambda_memory_mb" {
 variable "azure_storage_account_name" {
   description = "Azure storage account name"
   type        = string
+  default     = "strakbackupsa"
 }
 
 variable "azure_container_name" {
