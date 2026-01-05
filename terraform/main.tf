@@ -8,9 +8,19 @@ locals {
 
 # Include modules/files
 # AWS
-module "aws_iam" {
+module "aws" {
   source = "./aws"
+
+  # pass in the variables the aws module expects
+  project_name        = var.project_name
+  source_s3_bucket    = var.source_s3_bucket
+  source_s3_prefix    = var.source_s3_prefix
+  aws_region          = var.aws_region
+  azure_secret_name   = var.azure_secret_name
+  kms_key_arn         = var.kms_key_arn
+  schedule_expression = var.schedule_expression
 }
+
 
 # Azure resources
 module "azure" {
