@@ -77,7 +77,7 @@ variable "lambda_memory_mb" {
 }
 
 variable "lambda_reserved_concurrency" {
-  description = "Reserved concurrency for Lambda"
+  description = "Reserved concurrency limit for the Lambda function"
   type        = number
   default     = 2
 }
@@ -94,8 +94,3 @@ variable "kms_key_arn" {
   default     = null
 }
 
-variable "lambda_reserved_concurrency" {
-  description = "Reserved concurrency limit for the Lambda function"
-  type        = number
-  default     = 2
-}
