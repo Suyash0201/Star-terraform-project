@@ -9,9 +9,7 @@ locals {
 # Include modules/files
 # AWS
 module "aws" {
-  source = "./aws"
-
-  # pass in the variables the aws module expects
+  source              = "./aws"
   project_name        = var.project_name
   source_s3_bucket    = var.source_s3_bucket
   source_s3_prefix    = var.source_s3_prefix

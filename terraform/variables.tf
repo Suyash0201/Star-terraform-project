@@ -25,7 +25,7 @@ variable "source_s3_prefix" {
 variable "azure_subscription_id" {
   description = "Azure subscription ID"
   type        = string
-  default     = "f13b5de4-31e8-43a5-97dc-eaa6f3bcea5a"  
+  default     = "f13b5de4-31e8-43a5-97dc-eaa6f3bcea5a"
 }
 
 variable "azure_tenant_id" {
@@ -49,6 +49,7 @@ variable "azure_rg_name" {
 variable "azure_storage_account_name" {
   description = "Globally unique storage account name"
   type        = string
+  default     = "strakbackupsa"
 }
 
 variable "azure_container_name" {

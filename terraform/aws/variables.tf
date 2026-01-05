@@ -1,0 +1,37 @@
+variable "project_name" {
+  description = "Project name prefix for resources"
+  type        = string
+}
+
+variable "source_s3_bucket" {
+  description = "Existing S3 bucket name"
+  type        = string
+}
+
+variable "source_s3_prefix" {
+  description = "Optional prefix within S3"
+  type        = string
+  default     = ""
+}
+
+variable "aws_region" {
+  description = "AWS region"
+  type        = string
+}
+
+variable "azure_secret_name" {
+  description = "Secrets Manager secret name for Azure creds"
+  type        = string
+}
+
+variable "kms_key_arn" {
+  description = "Optional KMS key ARN"
+  type        = string
+  default     = null
+}
+
+variable "schedule_expression" {
+  description = "EventBridge schedule expression"
+  type        = string
+  default     = "rate(4 hours)"
+}
